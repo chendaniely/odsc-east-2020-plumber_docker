@@ -26,6 +26,8 @@ function(msg = "") {
 #* @param y the sectond number
 #* @get /avg2
 function(x, y) {
+  x <- as.numeric(x)
+  y <- as.numeric(y)
   return(
     list(result = (x + y) / 2)
   )
