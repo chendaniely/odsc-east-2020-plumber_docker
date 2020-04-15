@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+    plumber_api:
+      image: my_plumber_api
+      container_name: plumber_api
+      ports:
+        - 8000:8000
