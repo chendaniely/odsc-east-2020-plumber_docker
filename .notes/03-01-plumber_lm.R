@@ -4,7 +4,7 @@ mod <- readRDS(here::here(".notes/", "model.RDS"))
 #* @param new_dat new data
 #* @get /predict
 predict_price <- function(new_dat) {
-  one_row <- jsonlite::fromJSON(new_dat) %>% as.data.frame()
+  one_row <- as.data.frame(jsonlite::fromJSON(new_dat))
 
   return(
     list(
